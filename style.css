@@ -1,0 +1,88 @@
+:root {
+    --dark-color: #333;
+    --light-color: #fef;
+    --accent-color: #ff0000;
+    --border-size: 12px;
+    --bg: var(--dark-color); 
+    --text-color: var(--light-color)
+}
+
+body,html {
+    background: var(--bg);
+    color: var(--text-color)
+}
+a {
+    animation-duration: 400ms;
+    color: var(--light-color);
+    font-weight: 700;
+    transition: all .5s ease-in-out;
+}
+a:hover {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+nav {
+    background: linear-gradient(var(--accent-color), var(--dark-color));
+    padding: 10px;
+    margin: 0;
+    display: flex; /* Ensures horizontal alignment */
+    gap: 15px; /* Adds spacing between links */
+}
+
+nav a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Ensures text is visible */
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: background 0.3s; /* Smooth hover effect */
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
+}
+
+p {
+    /* word-wrap: break-word; Ensures long words break */
+    overflow-wrap: break-word; /* Ensures wrapping works in all cases */
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.foot {
+    padding-top: 280px;
+    margin: auto;
+}
+
+section {
+    /* width: 300px; Example fixed width */
+    overflow: hidden;
+    word-wrap: break-word;
+}
+/* p {
+    word-spacing: .5%;
+    letter-spacing: -.01px;
+    text-align: inherit;
+} */
+.right-section {
+align-items: right;
+text-align: right;
+place-self: right;
+justify-content: right;
+place-content: right;
+place-items: right;
+;
+}
+
+.left-section {
+    align-items: left;
+    text-align: left;
+    justify-content: left;
+}
+
+.perfect-image {
+    border-color: var(--accent-color);
+    border-radius: var(--border-size);
+    width: calc(205px + 5%);
+    height: calc(205px + 5%);
+}
