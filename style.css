@@ -8,7 +8,7 @@
 }
 
 body,html {
-    background: var(--bg);
+    background: linear-gradient(var(--dark-color), #111);
     color: var(--text-color)
 }
 a {
