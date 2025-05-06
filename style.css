@@ -86,3 +86,9 @@ place-items: right;
     width: calc(205px + 5%);
     height: calc(205px + 5%);
 }
+@media (max-width:480px)  {
+    .perfect-image {
+        width: calc(185px + 5%);
+        height: calc(185px + 5%); 
+    }
+}
