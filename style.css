@@ -1,63 +1,64 @@
 :root {
-    --dark-color: #333;
-    --light-color: #fef;
-    --accent-color: #ff0000;
-    --border-size: 12px;
-    --bg: var(--dark-color); 
-    --text-color: var(--light-color)
+  --dark-color: #333;
+  --light-color: #fef;
+  --accent-color: #ff0000;
+  --border-size: 12px;
+  --bg: var(--dark-color);
+  --text-color: var(--light-color);
 }
 
-body,html {
-    background: linear-gradient(var(--dark-color), #111);
-    color: var(--text-color)
+body,
+html {
+  background: linear-gradient(var(--dark-color), #111);
+  color: var(--text-color);
 }
 a {
-    animation-duration: 400ms;
-    color: var(--light-color);
-    font-weight: 700;
-    transition: all .5s ease-in-out;
+  animation-duration: 400ms;
+  color: var(--light-color);
+  font-weight: 700;
+  transition: all 0.5s ease-in-out;
 }
 a:hover {
-    color: var(--accent-color);
-    cursor: pointer;
+  color: var(--accent-color);
+  cursor: pointer;
 }
 nav {
-    background: linear-gradient(var(--accent-color), var(--dark-color));
-    padding: 10px;
-    margin: 0;
-    display: flex; /* Ensures horizontal alignment */
-    gap: 15px; /* Adds spacing between links */
+  background: linear-gradient(var(--accent-color), var(--dark-color));
+  padding: 10px;
+  margin: 0;
+  display: flex; /* Ensures horizontal alignment */
+  gap: 15px; /* Adds spacing between links */
 }
 
 nav a {
-    text-decoration: none; /* Removes underline */
-    color: white; /* Ensures text is visible */
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 5px; /* Slightly rounded corners */
-    transition: background 0.3s; /* Smooth hover effect */
+  text-decoration: none; /* Removes underline */
+  color: white; /* Ensures text is visible */
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: background 0.3s; /* Smooth hover effect */
 }
 
 nav a:hover {
-    background: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
+  background: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
 }
 
 p {
-    /* word-wrap: break-word; Ensures long words break */
-    overflow-wrap: break-word; /* Ensures wrapping works in all cases */
-    overflow: hidden;
-    word-wrap: break-word;
+  /* word-wrap: break-word; Ensures long words break */
+  overflow-wrap: break-word; /* Ensures wrapping works in all cases */
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .foot {
-    padding-top: 280px;
-    margin: auto;
+  padding-top: 280px;
+  margin: auto;
 }
 
 section {
-    /* width: 300px; Example fixed width */
-    overflow: hidden;
-    word-wrap: break-word;
+  /* width: 300px; Example fixed width */
+  overflow: hidden;
+  word-wrap: break-word;
 }
 /* p {
     word-spacing: .5%;
@@ -65,42 +66,40 @@ section {
     text-align: inherit;
 } */
 .right-section {
-align-items: right;
-text-align: right;
-place-self: right;
-justify-content: right;
-place-content: right;
-place-items: right;
-;
+  align-items: right;
+  text-align: right;
+  place-self: right;
+  justify-content: right;
+  place-content: right;
+  place-items: right;
 }
 
 .left-section {
-    align-items: left;
-    text-align: left;
-    justify-content: left;
+  align-items: left;
+  text-align: left;
+  justify-content: left;
 }
 
 .perfect-image {
-    border-color: var(--accent-color);
-    border-radius: var(--border-size);
-    width: calc(205px + 5%);
-    height: calc(205px + 5%);
+  border-color: var(--accent-color);
+  border-radius: var(--border-size);
+  width: calc(205px + 5%);
+  height: calc(205px + 5%);
 }
 .image-bounce {
-    animation: smoothbounceball 1.5s infinite ease-in;
+  animation: smoothbounceball 1.5s infinite ease-in;
 }
-@keyframes smoothbounceball{
-    from {
-        transform: translateY(5px);
-
-    }
-    to {
-        transform: translateY(-5px);
-    }
+@keyframes smoothbounceball {
+  from {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
 }
-@media (max-width:480px)  {
-    .perfect-image {
-        width: calc(185px + 5%);
-        height: calc(185px + 5%); 
-    }
+@media (max-width: 480px) {
+  .perfect-image {
+    width: calc(185px + 5%);
+    height: calc(185px + 5%);
+  }
 }
