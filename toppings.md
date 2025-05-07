@@ -1,4 +1,4 @@
 - [x] something animated,
 - [x] something that changes when screen size is reduced,
-- [] containers,
+- [x] containers,
 - [x] and the use of a grid OR have a gradient background.

@@ -55,7 +55,7 @@ p {
   margin: auto;
 }
 
-section {
+.container {
   /* width: 300px; Example fixed width */
   overflow: hidden;
   word-wrap: break-word;
